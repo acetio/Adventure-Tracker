@@ -1,0 +1,26 @@
+<html>
+<body>
+
+Adventure Tracker is a simple application designed to use minimal battery allowing you to send location updates to the tracker server without running your phone battery flat.<br><br>
+
+<b>How To Track Your Position in 2 easy steps</b><br>
+Step 1:<br>
+Press the Start Tracking button, if you have a previous tracking session you will be asked if you would like to <i>resume your previous session from your last location</i> or <i>start a new session</i><br><br>
+Step 2:<br>
+Use the Email Location button to send a link of your trail to yourself or people who you would like to follow you.<br>
+
+<b>Support and Feature Requests</b><br>
+I'm always interested to hear about any bugs you have or features you would like in Adventure Tracker that would help your sport.<br>
+Please email Bugs and Feature Requests to: <b><a href="adventuretracker@me.com">adventuretracker@me.com</a></b>
+
+<b>Coming Soon:</b>
+<ul><li>Updated Adventure tracker website with improved layout and track view.</li>
+<li>Twitter integration, broadcast your position using your twitter account</li>
+<li>Login to the Adventure tracker website using Google login</li>
+<li>Ability manage your tracks by logging into Adventure tracker site.</li>
+<li>Embed your trails into your own website</li>
+<li>Motivational messages, receive motivational voice messages from your followers</li>
+</ul>
+
+</body>
+</html>

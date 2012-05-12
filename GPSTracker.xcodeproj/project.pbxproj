@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* GPSTrackerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GPSTrackerAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* GPSTrackerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* GPSTrackerViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* GPSTrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GPSTrackerViewController.m */; };
+		3907C51C11D4BF9F001484B5 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3907C51A11D4BF9F001484B5 /* SettingsViewController.m */; };
+		3907C51D11D4BF9F001484B5 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3907C51B11D4BF9F001484B5 /* SettingsViewController.xib */; };
+		3907C53511D4C7B3001484B5 /* 103-map.png in Resources */ = {isa = PBXBuildFile; fileRef = 3907C53411D4C7B3001484B5 /* 103-map.png */; };
+		3907C53711D4C7D3001484B5 /* 74-location.png in Resources */ = {isa = PBXBuildFile; fileRef = 3907C53611D4C7D3001484B5 /* 74-location.png */; };
+		3907C53911D4C80B001484B5 /* 19-gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 3907C53811D4C80B001484B5 /* 19-gear.png */; };
+		3907C53B11D4C84E001484B5 /* 96-book.png in Resources */ = {isa = PBXBuildFile; fileRef = 3907C53A11D4C84E001484B5 /* 96-book.png */; };
+		39429701155E7A2000F27E50 /* GCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 394296E7155E7A2000F27E50 /* GCAlertView.m */; };
+		39429702155E7A2000F27E50 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 394296EB155E7A2000F27E50 /* DDXMLElementAdditions.m */; };
+		39429703155E7A2000F27E50 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 394296EE155E7A2000F27E50 /* NSString+DDXML.m */; };
+		39429704155E7A2000F27E50 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 394296F1155E7A2000F27E50 /* DDXMLDocument.m */; };
+		39429705155E7A2000F27E50 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 394296F3155E7A2000F27E50 /* DDXMLElement.m */; };
+		39429706155E7A2000F27E50 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 394296F5155E7A2000F27E50 /* DDXMLNode.m */; };
+		39429707155E7A2000F27E50 /* ABNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 394296FA155E7A2000F27E50 /* ABNotice.m */; };
+		39429708155E7A2000F27E50 /* ABNotifier.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 394296FB155E7A2000F27E50 /* ABNotifier.bundle */; };
+		39429709155E7A2000F27E50 /* ABNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 394296FD155E7A2000F27E50 /* ABNotifier.m */; };
+		3942970A155E7A2000F27E50 /* ABNotifierFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 39429700155E7A2000F27E50 /* ABNotifierFunctions.m */; };
+		3942970C155E7B0000F27E50 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3942970B155E7B0000F27E50 /* libxml2.dylib */; };
+		3946880A11CB6ACE003F6004 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3946880911CB6ACE003F6004 /* AVFoundation.framework */; };
+		394688B511CB799E003F6004 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394688B411CB799E003F6004 /* AudioToolbox.framework */; };
+		3947AD3A11BF86BA009795D1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3947AD3911BF86BA009795D1 /* CoreLocation.framework */; };
+		39564CB511D16B750056698C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39564CB311D16B750056698C /* MapViewController.m */; };
+		39564CB611D16B750056698C /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39564CB411D16B750056698C /* MapViewController.xib */; };
+		39564CD311D21DA80056698C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39564CD211D21DA80056698C /* MapKit.framework */; };
+		39564D2711D2274F0056698C /* PersistantStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 39564D2611D2274F0056698C /* PersistantStore.m */; };
+		3983FE0E11CA1738009362B3 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3983FE0C11CA1738009362B3 /* LogViewController.m */; };
+		3983FE0F11CA1738009362B3 /* LogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3983FE0D11CA1738009362B3 /* LogViewController.xib */; };
+		399E073D120B11EC009ADF9A /* 56-cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 399E073C120B11EC009ADF9A /* 56-cloud.png */; };
+		399E073F120B1230009ADF9A /* 18-envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 399E073E120B1230009ADF9A /* 18-envelope.png */; };
+		39C31E7611E212130013B994 /* 90-lifebuoy.png in Resources */ = {isa = PBXBuildFile; fileRef = 39C31E7511E212130013B994 /* 90-lifebuoy.png */; };
+		39C31E7B11E212430013B994 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C31E7911E212430013B994 /* HelpViewController.m */; };
+		39C31E7C11E212430013B994 /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39C31E7A11E212430013B994 /* HelpViewController.xib */; };
+		39C8427F1258A2BF00FFF318 /* DataUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C8427E1258A2BF00FFF318 /* DataUploader.m */; };
+		39CE39F414F8F26100739E78 /* Logo@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 39CE39F314F8F26100739E78 /* Logo@2.png */; };
+		39CE39F514F8F26B00739E78 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E29AF8148298B4007203DD /* Default.png */; };
+		39CE39F614F8F29900739E78 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3907C4F911D4BE36001484B5 /* Logo.png */; };
+		39D53F2414855E3100B05E8E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E29AF61482987E007203DD /* Default@2x.png */; };
+		39DC77A311C7954E0094C8B0 /* LocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DC77A211C7954E0094C8B0 /* LocationHelper.m */; };
+		39E1C04411C0E6E100DFD0D9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E1C04311C0E6E100DFD0D9 /* SystemConfiguration.framework */; };
+		39E1C12811C108C800DFD0D9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E1C12711C108C800DFD0D9 /* MessageUI.framework */; };
+		39E1C1B011C224AB00DFD0D9 /* LocationDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E1C1AF11C224AB00DFD0D9 /* LocationDataObject.m */; };
+		39E29AE9148275E0007203DD /* Adventure-Tracker-Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E29AE8148275E0007203DD /* Adventure-Tracker-Background.png */; };
+		39E29AEB14827693007203DD /* button-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E29AEA14827693007203DD /* button-green.png */; };
+		39E29AED14827760007203DD /* button-green-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E29AEC14827760007203DD /* button-green-highlight.png */; };
+		39E29AEF1482779F007203DD /* button-red-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E29AEE1482779F007203DD /* button-red-highlight.png */; };
+		39E29AF1148277A6007203DD /* button-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E29AF0148277A6007203DD /* button-red.png */; };
+		39E29AF3148277AC007203DD /* button-blue-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E29AF2148277AC007203DD /* button-blue-highlight.png */; };
+		39E29AF5148277B2007203DD /* button-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E29AF4148277B2007203DD /* button-blue.png */; };
+		39E7E22111EB338B001F776F /* SettingsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E7E21F11EB338B001F776F /* SettingsDetailController.m */; };
+		39E7E22211EB338B001F776F /* SettingsDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E7E22011EB338B001F776F /* SettingsDetailController.xib */; };
+		39F76CB512142C4800F96E0B /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F76CB312142C4800F96E0B /* CameraViewController.m */; };
+		39F76CB612142C4800F96E0B /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39F76CB412142C4800F96E0B /* CameraViewController.xib */; };
+		39F76CC712142DB100F96E0B /* 86-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 39F76CC612142DB100F96E0B /* 86-camera.png */; };
+		39F76D2812143D8800F96E0B /* LocationImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F76D2712143D8800F96E0B /* LocationImage.m */; };
+		39F76DA61215447500F96E0B /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F76DA51215447500F96E0B /* NSDataAdditions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* GPSTrackerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSTrackerAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* GPSTrackerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSTrackerAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* GPSTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* GPSTrackerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPSTrackerViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* GPSTrackerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSTrackerViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* GPSTrackerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSTrackerViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* GPSTracker_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSTracker_Prefix.pch; sourceTree = "<group>"; };
+		3907C4F911D4BE36001484B5 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		3907C51911D4BF9F001484B5 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ../SettingsViewController.h; sourceTree = "<group>"; };
+		3907C51A11D4BF9F001484B5 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = ../SettingsViewController.m; sourceTree = "<group>"; };
+		3907C51B11D4BF9F001484B5 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		3907C53411D4C7B3001484B5 /* 103-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "103-map.png"; sourceTree = "<group>"; };
+		3907C53611D4C7D3001484B5 /* 74-location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "74-location.png"; sourceTree = "<group>"; };
+		3907C53811D4C80B001484B5 /* 19-gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "19-gear.png"; sourceTree = "<group>"; };
+		3907C53A11D4C84E001484B5 /* 96-book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "96-book.png"; sourceTree = "<group>"; };
+		394296E6155E7A2000F27E50 /* GCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAlertView.h; sourceTree = "<group>"; };
+		394296E7155E7A2000F27E50 /* GCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAlertView.m; sourceTree = "<group>"; };
+		394296EA155E7A2000F27E50 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
+		394296EB155E7A2000F27E50 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
+		394296ED155E7A2000F27E50 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
+		394296EE155E7A2000F27E50 /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
+		394296EF155E7A2000F27E50 /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
+		394296F0155E7A2000F27E50 /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
+		394296F1155E7A2000F27E50 /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
+		394296F2155E7A2000F27E50 /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
+		394296F3155E7A2000F27E50 /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
+		394296F4155E7A2000F27E50 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
+		394296F5155E7A2000F27E50 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
+		394296F7155E7A2000F27E50 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		394296F9155E7A2000F27E50 /* ABNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNotice.h; sourceTree = "<group>"; };
+		394296FA155E7A2000F27E50 /* ABNotice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABNotice.m; sourceTree = "<group>"; };
+		394296FB155E7A2000F27E50 /* ABNotifier.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ABNotifier.bundle; sourceTree = "<group>"; };
+		394296FC155E7A2000F27E50 /* ABNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNotifier.h; sourceTree = "<group>"; };
+		394296FD155E7A2000F27E50 /* ABNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABNotifier.m; sourceTree = "<group>"; };
+		394296FE155E7A2000F27E50 /* ABNotifierDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNotifierDelegate.h; sourceTree = "<group>"; };
+		394296FF155E7A2000F27E50 /* ABNotifierFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNotifierFunctions.h; sourceTree = "<group>"; };
+		39429700155E7A2000F27E50 /* ABNotifierFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABNotifierFunctions.m; sourceTree = "<group>"; };
+		3942970B155E7B0000F27E50 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/usr/lib/libxml2.dylib; sourceTree = DEVELOPER_DIR; };
+		3946880911CB6ACE003F6004 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		394688B411CB799E003F6004 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3947AD3911BF86BA009795D1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		39564CB211D16B750056698C /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../MapViewController.h; sourceTree = "<group>"; };
+		39564CB311D16B750056698C /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../MapViewController.m; sourceTree = "<group>"; };
+		39564CB411D16B750056698C /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		39564CD211D21DA80056698C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		39564D2511D2274F0056698C /* PersistantStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistantStore.h; sourceTree = "<group>"; };
+		39564D2611D2274F0056698C /* PersistantStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistantStore.m; sourceTree = "<group>"; };
+		3983FE0B11CA1738009362B3 /* LogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogViewController.h; path = ../LogViewController.h; sourceTree = "<group>"; };
+		3983FE0C11CA1738009362B3 /* LogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogViewController.m; path = ../LogViewController.m; sourceTree = "<group>"; };
+		3983FE0D11CA1738009362B3 /* LogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogViewController.xib; sourceTree = "<group>"; };
+		399E073C120B11EC009ADF9A /* 56-cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "56-cloud.png"; sourceTree = "<group>"; };
+		399E073E120B1230009ADF9A /* 18-envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "18-envelope.png"; sourceTree = "<group>"; };
+		39C31E7511E212130013B994 /* 90-lifebuoy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "90-lifebuoy.png"; sourceTree = "<group>"; };
+		39C31E7811E212430013B994 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		39C31E7911E212430013B994 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		39C31E7A11E212430013B994 /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HelpViewController.xib; path = Classes/HelpViewController.xib; sourceTree = "<group>"; };
+		39C8427D1258A2BF00FFF318 /* DataUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUploader.h; sourceTree = "<group>"; };
+		39C8427E1258A2BF00FFF318 /* DataUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataUploader.m; sourceTree = "<group>"; };
+		39CE39F314F8F26100739E78 /* Logo@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo@2.png"; sourceTree = "<group>"; };
+		39CE39F714F8F2AF00739E78 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		39DC77A111C7954E0094C8B0 /* LocationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationHelper.h; sourceTree = "<group>"; };
+		39DC77A211C7954E0094C8B0 /* LocationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationHelper.m; sourceTree = "<group>"; };
+		39E1C04311C0E6E100DFD0D9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		39E1C12711C108C800DFD0D9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		39E1C1AE11C224AA00DFD0D9 /* LocationDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDataObject.h; sourceTree = "<group>"; };
+		39E1C1AF11C224AB00DFD0D9 /* LocationDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDataObject.m; sourceTree = "<group>"; };
+		39E29AE8148275E0007203DD /* Adventure-Tracker-Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Adventure-Tracker-Background.png"; sourceTree = "<group>"; };
+		39E29AEA14827693007203DD /* button-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-green.png"; sourceTree = "<group>"; };
+		39E29AEC14827760007203DD /* button-green-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-green-highlight.png"; sourceTree = "<group>"; };
+		39E29AEE1482779F007203DD /* button-red-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-red-highlight.png"; sourceTree = "<group>"; };
+		39E29AF0148277A6007203DD /* button-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-red.png"; sourceTree = "<group>"; };
+		39E29AF2148277AC007203DD /* button-blue-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-blue-highlight.png"; sourceTree = "<group>"; };
+		39E29AF4148277B2007203DD /* button-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-blue.png"; sourceTree = "<group>"; };
+		39E29AF61482987E007203DD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		39E29AF8148298B4007203DD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		39E7E21E11EB338B001F776F /* SettingsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsDetailController.h; sourceTree = "<group>"; };
+		39E7E21F11EB338B001F776F /* SettingsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsDetailController.m; sourceTree = "<group>"; };
+		39E7E22011EB338B001F776F /* SettingsDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsDetailController.xib; path = Classes/SettingsDetailController.xib; sourceTree = "<group>"; };
+		39F76CB212142C4800F96E0B /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		39F76CB312142C4800F96E0B /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		39F76CB412142C4800F96E0B /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CameraViewController.xib; path = Classes/CameraViewController.xib; sourceTree = "<group>"; };
+		39F76CC612142DB100F96E0B /* 86-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "86-camera.png"; sourceTree = "<group>"; };
+		39F76D2612143D8800F96E0B /* LocationImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationImage.h; sourceTree = "<group>"; };
+		39F76D2712143D8800F96E0B /* LocationImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationImage.m; sourceTree = "<group>"; };
+		39F76DA41215447500F96E0B /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		39F76DA51215447500F96E0B /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* GPSTracker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GPSTracker-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3942970C155E7B0000F27E50 /* libxml2.dylib in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				3947AD3A11BF86BA009795D1 /* CoreLocation.framework in Frameworks */,
+				39E1C04411C0E6E100DFD0D9 /* SystemConfiguration.framework in Frameworks */,
+				39E1C12811C108C800DFD0D9 /* MessageUI.framework in Frameworks */,
+				3946880A11CB6ACE003F6004 /* AVFoundation.framework in Frameworks */,
+				394688B511CB799E003F6004 /* AudioToolbox.framework in Frameworks */,
+				39564CD311D21DA80056698C /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				39F76DA31215445D00F96E0B /* ObjectAdditions */,
+				3907C51F11D4BFBB001484B5 /* ViewControllers */,
+				39E1C1DA11C22CC900DFD0D9 /* Objects */,
+				1D3623240D0F684500981E51 /* GPSTrackerAppDelegate.h */,
+				1D3623250D0F684500981E51 /* GPSTrackerAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* GPSTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				3942970B155E7B0000F27E50 /* libxml2.dylib */,
+				394296E4155E7A2000F27E50 /* Airbrake */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				8D1107310486CEB800E47090 /* GPSTracker-Info.plist */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* GPSTracker_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39CE39F714F8F2AF00739E78 /* Logo.png */,
+				39CE39F314F8F26100739E78 /* Logo@2.png */,
+				39E29AF8148298B4007203DD /* Default.png */,
+				39E29AF61482987E007203DD /* Default@2x.png */,
+				42869ED911DDDDE700CF58D4 /* Images */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				39F76CB412142C4800F96E0B /* CameraViewController.xib */,
+				2899E5210DE3E06400AC0155 /* GPSTrackerViewController.xib */,
+				3983FE0D11CA1738009362B3 /* LogViewController.xib */,
+				39564CB411D16B750056698C /* MapViewController.xib */,
+				3907C51B11D4BF9F001484B5 /* SettingsViewController.xib */,
+				39E7E22011EB338B001F776F /* SettingsDetailController.xib */,
+				39C31E7A11E212430013B994 /* HelpViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39E1C04311C0E6E100DFD0D9 /* SystemConfiguration.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				3947AD3911BF86BA009795D1 /* CoreLocation.framework */,
+				39E1C12711C108C800DFD0D9 /* MessageUI.framework */,
+				3946880911CB6ACE003F6004 /* AVFoundation.framework */,
+				394688B411CB799E003F6004 /* AudioToolbox.framework */,
+				39564CD211D21DA80056698C /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3907C51F11D4BFBB001484B5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				28D7ACF60DDB3853001CB0EB /* GPSTrackerViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* GPSTrackerViewController.m */,
+				3983FE0B11CA1738009362B3 /* LogViewController.h */,
+				3983FE0C11CA1738009362B3 /* LogViewController.m */,
+				3907C51911D4BF9F001484B5 /* SettingsViewController.h */,
+				3907C51A11D4BF9F001484B5 /* SettingsViewController.m */,
+				39564CB211D16B750056698C /* MapViewController.h */,
+				39564CB311D16B750056698C /* MapViewController.m */,
+				39C31E7811E212430013B994 /* HelpViewController.h */,
+				39C31E7911E212430013B994 /* HelpViewController.m */,
+				39E7E21E11EB338B001F776F /* SettingsDetailController.h */,
+				39E7E21F11EB338B001F776F /* SettingsDetailController.m */,
+				39F76CB212142C4800F96E0B /* CameraViewController.h */,
+				39F76CB312142C4800F96E0B /* CameraViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		394296E4155E7A2000F27E50 /* Airbrake */ = {
+			isa = PBXGroup;
+			children = (
+				394296E5155E7A2000F27E50 /* gcalertview */,
+				394296E8155E7A2000F27E50 /* kissxml */,
+				394296F8155E7A2000F27E50 /* notifier */,
+			);
+			path = Airbrake;
+			sourceTree = "<group>";
+		};
+		394296E5155E7A2000F27E50 /* gcalertview */ = {
+			isa = PBXGroup;
+			children = (
+				394296E6155E7A2000F27E50 /* GCAlertView.h */,
+				394296E7155E7A2000F27E50 /* GCAlertView.m */,
+			);
+			path = gcalertview;
+			sourceTree = "<group>";
+		};
+		394296E8155E7A2000F27E50 /* kissxml */ = {
+			isa = PBXGroup;
+			children = (
+				394296E9155E7A2000F27E50 /* Additions */,
+				394296EC155E7A2000F27E50 /* Categories */,
+				394296EF155E7A2000F27E50 /* DDXML.h */,
+				394296F0155E7A2000F27E50 /* DDXMLDocument.h */,
+				394296F1155E7A2000F27E50 /* DDXMLDocument.m */,
+				394296F2155E7A2000F27E50 /* DDXMLElement.h */,
+				394296F3155E7A2000F27E50 /* DDXMLElement.m */,
+				394296F4155E7A2000F27E50 /* DDXMLNode.h */,
+				394296F5155E7A2000F27E50 /* DDXMLNode.m */,
+				394296F6155E7A2000F27E50 /* Private */,
+			);
+			path = kissxml;
+			sourceTree = "<group>";
+		};
+		394296E9155E7A2000F27E50 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				394296EA155E7A2000F27E50 /* DDXMLElementAdditions.h */,
+				394296EB155E7A2000F27E50 /* DDXMLElementAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		394296EC155E7A2000F27E50 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				394296ED155E7A2000F27E50 /* NSString+DDXML.h */,
+				394296EE155E7A2000F27E50 /* NSString+DDXML.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		394296F6155E7A2000F27E50 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				394296F7155E7A2000F27E50 /* DDXMLPrivate.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		394296F8155E7A2000F27E50 /* notifier */ = {
+			isa = PBXGroup;
+			children = (
+				394296F9155E7A2000F27E50 /* ABNotice.h */,
+				394296FA155E7A2000F27E50 /* ABNotice.m */,
+				394296FB155E7A2000F27E50 /* ABNotifier.bundle */,
+				394296FC155E7A2000F27E50 /* ABNotifier.h */,
+				394296FD155E7A2000F27E50 /* ABNotifier.m */,
+				394296FE155E7A2000F27E50 /* ABNotifierDelegate.h */,
+				394296FF155E7A2000F27E50 /* ABNotifierFunctions.h */,
+				39429700155E7A2000F27E50 /* ABNotifierFunctions.m */,
+			);
+			path = notifier;
+			sourceTree = "<group>";
+		};
+		39E1C1DA11C22CC900DFD0D9 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				39C8427D1258A2BF00FFF318 /* DataUploader.h */,
+				39C8427E1258A2BF00FFF318 /* DataUploader.m */,
+				39E1C1AE11C224AA00DFD0D9 /* LocationDataObject.h */,
+				39E1C1AF11C224AB00DFD0D9 /* LocationDataObject.m */,
+				39F76D2612143D8800F96E0B /* LocationImage.h */,
+				39F76D2712143D8800F96E0B /* LocationImage.m */,
+				39DC77A111C7954E0094C8B0 /* LocationHelper.h */,
+				39DC77A211C7954E0094C8B0 /* LocationHelper.m */,
+				39564D2511D2274F0056698C /* PersistantStore.h */,
+				39564D2611D2274F0056698C /* PersistantStore.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		39F76DA31215445D00F96E0B /* ObjectAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				39F76DA41215447500F96E0B /* NSDataAdditions.h */,
+				39F76DA51215447500F96E0B /* NSDataAdditions.m */,
+			);
+			name = ObjectAdditions;
+			sourceTree = "<group>";
+		};
+		42869ED911DDDDE700CF58D4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				39E29AF4148277B2007203DD /* button-blue.png */,
+				39E29AF2148277AC007203DD /* button-blue-highlight.png */,
+				39E29AF0148277A6007203DD /* button-red.png */,
+				39E29AEE1482779F007203DD /* button-red-highlight.png */,
+				39E29AEC14827760007203DD /* button-green-highlight.png */,
+				39E29AEA14827693007203DD /* button-green.png */,
+				39E29AE8148275E0007203DD /* Adventure-Tracker-Background.png */,
+				39F76CC612142DB100F96E0B /* 86-camera.png */,
+				399E073E120B1230009ADF9A /* 18-envelope.png */,
+				399E073C120B11EC009ADF9A /* 56-cloud.png */,
+				39C31E7511E212130013B994 /* 90-lifebuoy.png */,
+				3907C53A11D4C84E001484B5 /* 96-book.png */,
+				3907C53811D4C80B001484B5 /* 19-gear.png */,
+				3907C53611D4C7D3001484B5 /* 74-location.png */,
+				3907C53411D4C7B3001484B5 /* 103-map.png */,
+				3907C4F911D4BE36001484B5 /* Logo.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* GPSTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GPSTracker" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPSTracker;
+			productName = GPSTracker;
+			productReference = 1D6058910D05DD3D006BFB54 /* GPSTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GPSTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* GPSTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* GPSTrackerViewController.xib in Resources */,
+				3983FE0F11CA1738009362B3 /* LogViewController.xib in Resources */,
+				39564CB611D16B750056698C /* MapViewController.xib in Resources */,
+				3907C51D11D4BF9F001484B5 /* SettingsViewController.xib in Resources */,
+				3907C53511D4C7B3001484B5 /* 103-map.png in Resources */,
+				3907C53711D4C7D3001484B5 /* 74-location.png in Resources */,
+				3907C53911D4C80B001484B5 /* 19-gear.png in Resources */,
+				3907C53B11D4C84E001484B5 /* 96-book.png in Resources */,
+				39C31E7611E212130013B994 /* 90-lifebuoy.png in Resources */,
+				39C31E7C11E212430013B994 /* HelpViewController.xib in Resources */,
+				39E7E22211EB338B001F776F /* SettingsDetailController.xib in Resources */,
+				399E073D120B11EC009ADF9A /* 56-cloud.png in Resources */,
+				399E073F120B1230009ADF9A /* 18-envelope.png in Resources */,
+				39F76CB612142C4800F96E0B /* CameraViewController.xib in Resources */,
+				39F76CC712142DB100F96E0B /* 86-camera.png in Resources */,
+				39E29AE9148275E0007203DD /* Adventure-Tracker-Background.png in Resources */,
+				39E29AEB14827693007203DD /* button-green.png in Resources */,
+				39E29AED14827760007203DD /* button-green-highlight.png in Resources */,
+				39E29AEF1482779F007203DD /* button-red-highlight.png in Resources */,
+				39E29AF1148277A6007203DD /* button-red.png in Resources */,
+				39E29AF3148277AC007203DD /* button-blue-highlight.png in Resources */,
+				39E29AF5148277B2007203DD /* button-blue.png in Resources */,
+				39D53F2414855E3100B05E8E /* Default@2x.png in Resources */,
+				39CE39F414F8F26100739E78 /* Logo@2.png in Resources */,
+				39CE39F514F8F26B00739E78 /* Default.png in Resources */,
+				39CE39F614F8F29900739E78 /* Logo.png in Resources */,
+				39429708155E7A2000F27E50 /* ABNotifier.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* GPSTrackerAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* GPSTrackerViewController.m in Sources */,
+				39E1C1B011C224AB00DFD0D9 /* LocationDataObject.m in Sources */,
+				39DC77A311C7954E0094C8B0 /* LocationHelper.m in Sources */,
+				3983FE0E11CA1738009362B3 /* LogViewController.m in Sources */,
+				39564CB511D16B750056698C /* MapViewController.m in Sources */,
+				39564D2711D2274F0056698C /* PersistantStore.m in Sources */,
+				3907C51C11D4BF9F001484B5 /* SettingsViewController.m in Sources */,
+				39C31E7B11E212430013B994 /* HelpViewController.m in Sources */,
+				39E7E22111EB338B001F776F /* SettingsDetailController.m in Sources */,
+				39F76CB512142C4800F96E0B /* CameraViewController.m in Sources */,
+				39F76D2812143D8800F96E0B /* LocationImage.m in Sources */,
+				39F76DA61215447500F96E0B /* NSDataAdditions.m in Sources */,
+				39C8427F1258A2BF00FFF318 /* DataUploader.m in Sources */,
+				39429701155E7A2000F27E50 /* GCAlertView.m in Sources */,
+				39429702155E7A2000F27E50 /* DDXMLElementAdditions.m in Sources */,
+				39429703155E7A2000F27E50 /* NSString+DDXML.m in Sources */,
+				39429704155E7A2000F27E50 /* DDXMLDocument.m in Sources */,
+				39429705155E7A2000F27E50 /* DDXMLElement.m in Sources */,
+				39429706155E7A2000F27E50 /* DDXMLNode.m in Sources */,
+				39429707155E7A2000F27E50 /* ABNotice.m in Sources */,
+				39429709155E7A2000F27E50 /* ABNotifier.m in Sources */,
+				3942970A155E7A2000F27E50 /* ABNotifierFunctions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GPSTracker_Prefix.pch;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "GPSTracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = "";
+				PRODUCT_NAME = GPSTracker;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = /Users/nicjackson/Documents/Code/iPhone/PJSIP/Simulator;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GPSTracker_Prefix.pch;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "GPSTracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = /Users/nicjackson/Documents/Code/iPhone/PJSIP/iPhone;
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = /Users/nicjackson/Documents/Code/iPhone/PJSIP/Simulator;
+				PRODUCT_NAME = GPSTracker;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = /Users/nicjackson/Documents/Code/iPhone/PJSIP/Simulator;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39C31F6011E326E50013B994 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nic Jackson";
+				COMPRESS_PNG_FILES = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = /Users/nicjackson/Documents/Code/iPhone/GPSTracker/PJSIP/iPhone;
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = /Users/nicjackson/Documents/Code/iPhone/GPSTracker/PJSIP/Simulator;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "13E7B16F-CD06-4DB0-A9B6-5104BE4D3791";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "/Users/nicjackson/Documents/Code/iPhone/PJSIP_SVNRESP/pjnath/include /Users/nicjackson/Documents/Code/iPhone/PJSIP_SVNRESP/pjmedia/include /Users/nicjackson/Documents/Code/iPhone/PJSIP_SVNRESP/pjlib-util/include /Users/nicjackson/Documents/Code/iPhone/PJSIP_SVNRESP/pjlib/include /Users/nicjackson/Documents/Code/iPhone/PJSIP_SVNRESP/pjsip/include";
+			};
+			name = Distribution;
+		};
+		39C31F6111E326E50013B994 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GPSTracker_Prefix.pch;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "GPSTracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = /Users/nicjackson/Documents/Code/iPhone/PJSIP/iPhone;
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = /Users/nicjackson/Documents/Code/iPhone/PJSIP/Simulator;
+				PRODUCT_NAME = GPSTracker;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = /Users/nicjackson/Documents/Code/iPhone/PJSIP/Simulator;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nic Jackson (FC4EMSY8C8)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = /Users/nicjackson/Documents/Code/iPhone/GPSTracker/PJSIP/iPhone;
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = /Users/nicjackson/Documents/Code/iPhone/GPSTracker/PJSIP/Simulator;
+				PROVISIONING_PROFILE = "B6C9F438-1928-489D-B2B3-AC392D60F5C2";
+				SDKROOT = iphonesimulator4.0;
+				USER_HEADER_SEARCH_PATHS = "/Users/nicjackson/Documents/Code/iPhone/PJSIP_SVNRESP/pjnath/include /Users/nicjackson/Documents/Code/iPhone/PJSIP_SVNRESP/pjmedia/include /Users/nicjackson/Documents/Code/iPhone/PJSIP_SVNRESP/pjlib-util/include /Users/nicjackson/Documents/Code/iPhone/PJSIP_SVNRESP/pjlib/include /Users/nicjackson/Documents/Code/iPhone/PJSIP_SVNRESP/pjsip/include";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nic Jackson";
+				COMPRESS_PNG_FILES = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = /Users/nicjackson/Documents/Code/iPhone/GPSTracker/PJSIP/iPhone;
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = /Users/nicjackson/Documents/Code/iPhone/GPSTracker/PJSIP/Simulator;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "13E7B16F-CD06-4DB0-A9B6-5104BE4D3791";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "/Users/nicjackson/Documents/Code/iPhone/PJSIP_SVNRESP/pjnath/include /Users/nicjackson/Documents/Code/iPhone/PJSIP_SVNRESP/pjmedia/include /Users/nicjackson/Documents/Code/iPhone/PJSIP_SVNRESP/pjlib-util/include /Users/nicjackson/Documents/Code/iPhone/PJSIP_SVNRESP/pjlib/include /Users/nicjackson/Documents/Code/iPhone/PJSIP_SVNRESP/pjsip/include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GPSTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				39C31F6111E326E50013B994 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GPSTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				39C31F6011E326E50013B994 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
